@@ -1,0 +1,8 @@
+# phpunit cache
+.phpunit.result.cache
+
+# Composer
+/vendor
+
+# idea
+/.idea

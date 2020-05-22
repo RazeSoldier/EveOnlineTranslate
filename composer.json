@@ -1,0 +1,19 @@
+{
+  "name": "razesoldier/eve-translate",
+  "version": "0.1",
+  "license": "GPL-2.0-or-later",
+  "description": "This package provides the ability to translate EVE Online things",
+  "require": {
+    "php": ">=7.2.5",
+    "symfony/http-client": "^5.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "RazeSoldier\\EveTranslate\\": "src/"
+    }
+  }
+}
