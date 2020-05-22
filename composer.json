@@ -1,6 +1,6 @@
 {
   "name": "razesoldier/eve-translate",
-  "version": "0.1",
+  "version": "0.2",
   "license": "GPL-2.0-or-later",
   "description": "This package provides the ability to translate EVE Online things",
   "require": {

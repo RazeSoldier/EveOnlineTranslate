@@ -20,6 +20,7 @@ class ItemTranslateTest extends TestCase
             ['缪宁级', 'Muninn'],
             ['渎圣级蓝图', 'Sacrilege Blueprint'],
             ['毒蜥级', 'Gila'],
+            ['太空舱', 'Capsule'],
         ];
     }
 }

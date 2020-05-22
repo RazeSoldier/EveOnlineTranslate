@@ -60,6 +60,14 @@ class ItemTranslate
      */
     private function doTranslate() : string
     {
+        // Capsule is actually not a valid inventory type, so it can only be hardcoded
+        if ($this->itemName === 'Capsule') {
+            if ($this->targetLang === 'zh') {
+                return '太空舱';
+            } else {
+                return 'Capsule';
+            }
+        }
         return $this->getItemInfo($this->searchItemId($this->itemName), $this->targetLang)->name;
     }
 
