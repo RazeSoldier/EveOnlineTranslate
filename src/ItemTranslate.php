@@ -90,7 +90,12 @@ class ItemTranslate
      */
     private function getItemInfo(string $itemId, string $targetLang) : stdClass
     {
-        $url = "https://esi.evetech.net/v3/universe/types/$itemId/?datasource=tranquility&language=$targetLang";
+    	if ($targetLang === 'zh') {
+		    $url = "https://esi.evepc.163.com/v3/universe/types/$itemId/?datasource=serenity&language=zh";
+	    } else {
+		    $url = "https://esi.evetech.net/v3/universe/types/$itemId/?datasource=tranquility&language=$targetLang";
+	    }
+
         return json_decode($this->sendRequest($url));
     }
 
